@@ -1,0 +1,226 @@
+* {
+    font-family: 'Quicksand', sans-serif;
+  }
+ 
+
+
+  body{
+    height: 448vh;
+  }
+
+.navbar {
+    position: fixed;  
+    top: 0;
+    left: 0;
+    width: 100%;  
+    height: 12%; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 20px;
+    color: white;
+    transition: background .3s ease-in;
+}
+
+.scrolled{
+    background-color:#000000;
+    height: 12%;
+    transition: background .3s ease-in;
+}
+
+.scrolled .button{
+    margin-top: 5%;
+    padding: 15px;
+}
+
+.logo{
+    font-size: 2rem;
+}
+
+.icon{
+    margin-top: 18px;
+    font-size: 1.7rem;
+    transition: all .3s ease-in-out;
+}
+
+.icon:hover{
+    color: rgb(127, 206, 233);
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.center {
+    display: flex;
+    gap: 50px;
+}
+
+.navItem {
+    position: relative;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.3rem;
+    opacity: 1;
+    text-decoration: none;
+    transition: all .3s ease-in;
+  }
+  
+  
+  .navItem::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px;
+    background-color: white;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .navItem:hover::after {
+    width: 100%;
+  }
+  
+
+
+.right {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.button {
+    padding: 20px;
+    margin-top: 30px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    font-size: 1.2rem;
+    position: relative;
+    transition: color 0.3s ease, background-color 0.5s ease;
+    border-radius: 10px;
+}
+
+.button:hover {
+    color: black; /* Text wird schwarz */
+    background-color: white; /* Hintergrund wird weiß */
+    cursor: pointer;
+}
+
+
+
+/* Für das Burger-Menü */
+.burgerMenu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  /* Menü für kleine Bildschirme */
+  
+  
+
+  .navClosed{
+    display: none;
+  }
+
+  .burgerBtn{
+    background-color: rgb(4, 4, 202);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 3px 3px 4px black;
+  }
+
+  
+
+  @media screen and (max-width: 767px) {
+    .burgerMenu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        background-color: transparent;
+        color: white;
+        font-size: 1.4rem;
+    }
+
+    /* Menü ausgeblendet (startet links außerhalb des Bildschirms) */
+    .navClosed {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 50%;
+        height: 100vh;
+        background-color: #333;
+        padding: 20px;
+        z-index: 10;
+        transition: left 0.5s ease-in-out;
+    }
+
+    /* Menü wird eingeblendet */
+    .navOpen {
+        left: 0; /* Menü fährt rein */
+        transition: left 0.5s ease-in-out;
+    }
+
+    .navOpen ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 20%;
+        font-size: 1.3rem;
+    }
+
+    .navOpen li {
+        margin-bottom: 15px;
+    }
+
+    .navOpen .icon {
+        margin-top: 10%;
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 20px;
+    }
+
+    .navOpen > ul > h1{
+        margin-top: 10%;
+    }
+
+    .navOpen a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .closeButton {
+        position: absolute;
+        margin-top: -2%;
+        margin-left: 1%;
+        background-color: transparent;
+        color: rgb(218, 27, 27);
+        border: none;
+        font-size: 2rem;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+    .icon, .navItem, .button {
+        display: none;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20%;
+        margin-left: 50%;
+        margin-right: 50%;
+    }
+}

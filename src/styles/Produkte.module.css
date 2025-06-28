@@ -1,0 +1,72 @@
+.sectionProdukte{
+    background-color: black;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    margin-top: 15%;
+    border-radius: 12px;
+    box-shadow: 4px 4px 5px black;
+    width: 90%;
+    margin-left: 5%;
+    padding: 10px;
+}
+
+.ProdukteH1{
+    text-align: center;
+    letter-spacing: 1.6px;
+    font-size: 2rem;
+}
+
+
+.ProdukteInfo{
+    color: #b8b8b8;
+    text-align: center;
+    max-width: 80%;
+    margin-left: 10%;
+    font-size: 1.1rem;
+    letter-spacing: 1.6px;
+}
+
+
+.ProdukteDiv{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 100px;
+    margin-top: 5%;
+}
+
+
+.ProdukteUnterDiv{
+    background-color: #342040;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+
+.ProdukteAppText{
+    text-align: center;
+    margin-top: 4%;
+    letter-spacing: 1.6px;
+}
+
+
+.download{
+    background-color: rgb(6, 6, 164);
+    color: white;
+    letter-spacing: 1.6px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 45%;
+    margin-top: 1%;
+    cursor: pointer;
+    box-shadow: 3px 3px 4px rgb(22, 21, 21);
+    transition: all 0.3s ease;
+}
+
+.download:hover {
+    transform: scale(1.1);
+}
