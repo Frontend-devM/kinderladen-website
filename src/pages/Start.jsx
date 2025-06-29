@@ -1,6 +1,6 @@
 import { Typewriter } from "react-simple-typewriter";
 import styled, { keyframes } from "styled-components";
-import { motion } from "framer-motion";
+import { motion } from "framer-motion"; 
 import { useInView } from "react-intersection-observer";
 import Logo from "../assets/Logo.jpg";
 
@@ -126,11 +126,12 @@ function Start() {
         animate={typeWriterinView ? {opacity: 1, x: 0} : {}}
         transition={{duration: 0.8, ease: "easeOut"}}
       >
+       
       <TypewriterText>
-         Looking for fun? <br />We've got the perfect toy for you -<br />
+      Looking for fun? <br />We've got the perfect toy for you -<br />
         <span style={{ color: "lightblue" }}>
           <Typewriter
-            words={[" Frontend Entwickler", " React developer", " UI designer"]}
+            words={["Frontend Entwickler", " React developer", " UI designer"]}
             loop={true}
             cursor
             cursorStyle="|"
@@ -150,6 +151,7 @@ function Start() {
          transition={{duration: 0.8, ease: "easeOut"}}
          >
       <MyInfoText>
+
         Hallo! Ich bin Mehmet Katircioglu, 14 Jahre alt und hauptberuflich
         Frontend developer. Am liebsten programmiere ich mit React, da ich 
         darauf spezalisiert bin. Zudem habe ich auch gute Kenntnisse im UI
@@ -165,7 +167,7 @@ function Start() {
          animate={btnInView ? {opacity: 1, x: 0} : {}}
          transition={{duration: 0.8, ease: "easeIn"}}
          >
-      <ConnectBtn>Download App! <span>➡️</span></ConnectBtn>
+      <ConnectBtn> Download App! <span>➡️</span></ConnectBtn>
       </motion.div>
       </motion.div>
     </section>
