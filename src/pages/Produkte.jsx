@@ -18,7 +18,7 @@ function Produkte() {
   });
 
   return (
-    <section className={styles.sectionProdukte}>
+    <section className={styles.sectionProdukte} id="products">
       <motion.div
         ref={headingRef}
         initial={{ opacity: 0, x: 50 }}

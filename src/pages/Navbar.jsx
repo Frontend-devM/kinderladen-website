@@ -5,11 +5,14 @@ import {
   faLinkedin,
   faFacebook,
   faInstagram,
+  faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
+import { useNavigate } from "react-router-dom";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const navigate = useNavigate();
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -19,13 +22,13 @@ function Navbar() {
     const el = document.getElementById(id);
     if (el && window.lenis) {
       window.lenis.scrollTo(el);
-      setMenuOpen(false); // Menü schließen nach Klick (optional)
+      setMenuOpen(false); 
     }
   };
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      setIsScrolled(window.scrollY > 10);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -49,7 +52,7 @@ function Navbar() {
           <h1>المفكر الصغير</h1>
           <li>
             <button
-              onClick={() => handleLenisScroll("home")}
+              onClick={() => handleLenisScroll("Home")}
               className={styles.burgerBtn}
             >
               Home
@@ -85,6 +88,9 @@ function Navbar() {
           <li>
             <FontAwesomeIcon icon={faInstagram} className={styles.icon} />
           </li>
+          <li>
+            <FontAwesomeIcon icon={faWhatsapp} className={styles.icon} />
+          </li>
         </ul>
       </nav>
 
@@ -93,29 +99,30 @@ function Navbar() {
       </div>
 
       <div className={styles.center}>
-        <p className={styles.navItem} onClick={() => handleLenisScroll("home")}>
+        <p className={styles.navItem} onClick={() => handleLenisScroll("Home")}>
           Home
         </p>
         <p
           className={styles.navItem}
-          onClick={() => handleLenisScroll("skills")}
+          onClick={() => handleLenisScroll("products")}
         >
           Products
         </p>
         <p
           className={styles.navItem}
-          onClick={() => handleLenisScroll("projekte")}
+          onClick={() => handleLenisScroll("location")}
         >
           Location
         </p>
         <FontAwesomeIcon icon={faFacebook} className={styles.icon} />
         <FontAwesomeIcon icon={faInstagram} className={styles.icon} />
+        <FontAwesomeIcon icon={faWhatsapp} className={styles.icon} />
       </div>
 
       <div className={styles.right}>
         <button
           className={styles.button}
-          onClick={() => handleLenisScroll("download App")}
+          onClick={() => navigate("/AppDownload")}
         >
           Download App
         </button>

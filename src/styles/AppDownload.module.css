@@ -1,0 +1,54 @@
+:root {
+  --bg: #ffffff;
+  --text: #212121;
+  --primary: #02569B;
+  --primary-light: #42A5F5;
+  --secondary: #7B61FF;
+  --hover: #E3F2FD;
+  --gray: #666666;
+  --error: #E53935;
+}
+
+
+body {
+    background-color: var(--bg);
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+
+.BlurText{
+  font-size: 3rem;
+  color: white;
+  letter-spacing: 2px;
+  margin-left: 43%;
+  margin-top: 5%;
+}
+
+.Handy{
+  height: 300px;
+  margin-left: -45%;
+  position: absolute;
+}
+
+.Handy1{
+  height: 300px;
+  float: right;
+  margin-right: 5%;
+}
+
+
+.SplitText{
+  color: rgb(183, 175, 175);
+  width: 350px;
+  letter-spacing: 1.6px;
+  line-height: 25px;
+  margin-left: 39%;
+  
+}
+
+
+
+hr{
+  width: 60px;
+}

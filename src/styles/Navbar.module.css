@@ -5,7 +5,7 @@
 
 
   body{
-    height: 448vh;
+    height: 400vh;
   }
 
 .navbar {
@@ -20,6 +20,7 @@
     padding: 0 20px;
     color: white;
     transition: background .3s ease-in;
+    z-index: 9999;
 }
 
 .scrolled{

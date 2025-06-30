@@ -1,0 +1,35 @@
+.sectionProdukte{
+    background-color: black;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    margin-top: 15%;
+    border-radius: 12px;
+    box-shadow: 4px 4px 5px black;
+    width: 90%;
+    margin-left: 5%;
+    padding: 10px;
+}
+
+.ProdukteH1{
+    text-align: center;
+    letter-spacing: 1.6px;
+    font-size: 2rem;
+}
+
+
+.ProdukteInfo{
+    color: #b8b8b8;
+    text-align: center;
+    max-width: 80%;
+    margin-left: 10%;
+    font-size: 1.1rem;
+    letter-spacing: 1.6px;
+}
+
+
+
+.GradientText{
+    font-size: 2rem;
+    letter-spacing: 1.6px;
+}
+

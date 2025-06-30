@@ -110,7 +110,7 @@ function Start() {
   const {ref: btnRef, inView: btnInView} = useInView({triggerOnce: true, threshold: 0.2});
 
   return (
-    <section id="home">
+    <section id="Home">
       <motion.div
         ref={welcomeRef}
         initial={{ opacity: 0, y: -100 }}
