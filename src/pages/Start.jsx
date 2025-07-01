@@ -3,6 +3,7 @@ import styled, { keyframes } from "styled-components";
 import { motion } from "framer-motion"; 
 import { useInView } from "react-intersection-observer";
 import { useNavigate } from "react-router-dom";
+import Logo from "../assets/Logo.jpg";
 
 
 const WelcomeMessage = styled.p`
@@ -111,6 +112,8 @@ function Start() {
   const {ref: infoTextRef, inView: infoTextInView} = useInView({triggerOnce: true, threshold: 0.2});
   const {ref: btnRef, inView: btnInView} = useInView({triggerOnce: true, threshold: 0.2});
 
+  const isMobile = window.innerWidth < 767;
+
 
   const navigate = useNavigate();
 
@@ -163,6 +166,11 @@ function Start() {
         Design um selber zu designen und schließlich dies in Code umzusetzen.
       </MyInfoText>
       </motion.div>
+
+
+      {!isMobile && (
+        <Img src={Logo} alt="Logo" loading="lazy"/>
+      )}
       
 
       <motion.div

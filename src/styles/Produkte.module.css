@@ -75,6 +75,7 @@
 
 
 @media (max-width: 767px) {
+
     .ProdukteDiv{
         display: flex;
         flex-wrap: wrap;
@@ -88,5 +89,10 @@
         margin-left: 35%;
         margin-top: 5%;
 
+    }
+
+
+    .sectionProdukte{
+        margin-left: -2%;
     }
 }
