@@ -75,7 +75,7 @@ const IconItem = styled.li`
 function Footer() {
   return (
     <Section id="footer">
-      <H1>المفكر الصغير</H1>
+      <H1>المفكر الصغير  </H1>
       <RightBox>
         <IconContainer>
           <IconItem>

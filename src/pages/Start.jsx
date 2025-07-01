@@ -3,6 +3,7 @@ import styled, { keyframes } from "styled-components";
 import { motion } from "framer-motion"; 
 import { useInView } from "react-intersection-observer";
 import Logo from "../assets/Logo.jpg";
+import { useNavigate } from "react-router-dom";
 
 
 const WelcomeMessage = styled.p`
@@ -109,6 +110,9 @@ function Start() {
   const {ref: infoTextRef, inView: infoTextInView} = useInView({triggerOnce: true, threshold: 0.2});
   const {ref: btnRef, inView: btnInView} = useInView({triggerOnce: true, threshold: 0.2});
 
+
+  const navigate = useNavigate();
+
   return (
     <section id="Home">
       <motion.div
@@ -167,7 +171,7 @@ function Start() {
          animate={btnInView ? {opacity: 1, x: 0} : {}}
          transition={{duration: 0.8, ease: "easeIn"}}
          >
-      <ConnectBtn> Download App! <span>➡️</span></ConnectBtn>
+      <ConnectBtn onClick={() => navigate("/AppDownload")}> Download App! <span>➡️</span></ConnectBtn>
       </motion.div>
       </motion.div>
     </section>

@@ -25,9 +25,22 @@ body {
   margin-top: 5%;
 }
 
+.SplitText{
+  color: rgb(183, 175, 175);
+  width: 360px;
+  letter-spacing: 1.6px;
+  line-height: 25px;
+  margin-left: 39%;
+  margin-top: 2%;
+
+}
+
+
+
 .Handy{
   height: 300px;
-  margin-left: -45%;
+  margin-left: 10%;
+  margin-top: -10%;
   position: absolute;
 }
 
@@ -35,20 +48,65 @@ body {
   height: 300px;
   float: right;
   margin-right: 5%;
+  margin-top: -10%;
 }
 
-
-.SplitText{
-  color: rgb(183, 175, 175);
-  width: 350px;
-  letter-spacing: 1.6px;
-  line-height: 25px;
-  margin-left: 39%;
-  
-}
 
 
 
 hr{
   width: 60px;
+}
+
+
+.Apple{
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  transition: all .3s ease;
+}
+
+.Apple:hover{
+  transform: scale(1.2);
+}
+
+.Google{
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  transition: all .3s ease;
+}
+
+.Google:hover{
+  transform: scale(1.2);
+}
+
+
+
+
+.downloadDiv{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-left: 20%;
+  margin-top: 3%;
+}
+
+
+
+.back{
+  margin-top: -20px;
+  margin-left: 20px;
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  letter-spacing: 1.6px;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+.back:hover{
+  transform: translateX(11.6px);
 }

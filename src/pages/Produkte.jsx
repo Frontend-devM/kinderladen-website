@@ -2,6 +2,7 @@ import styles from "../styles/Produkte.module.css";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Tilt from "react-parallax-tilt";
+import { useNavigate }  from "react-router-dom"
 
 function Produkte() {
   const { ref: headingRef, inView: headingInView } = useInView({
@@ -16,6 +17,8 @@ function Produkte() {
     triggerOnce: true,
     threshold: 0.2,
   });
+
+  const navigate = useNavigate();
 
   return (
     <section className={styles.sectionProdukte} id="products">
@@ -80,7 +83,7 @@ function Produkte() {
       >
         <p className={styles.ProdukteAppText}>
           You want to see more?
-          <button className={styles.download}>Download App</button>
+          <button className={styles.download} onClick={() => navigate("/AppDownload")}>Download App</button>
         </p>
       </motion.div>
     </section>
