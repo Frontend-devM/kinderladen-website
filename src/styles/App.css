@@ -1,6 +1,6 @@
 body{
     background-image: url("/hintergrundBild.png");
     font-family: 'Quicksand', sans-serif;
-    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
