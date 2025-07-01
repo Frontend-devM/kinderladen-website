@@ -29,6 +29,16 @@
     transition: background .3s ease-in;
 }
 
+.scrolled .resLogo{
+    height: 60px;
+    margin-top: -1%;
+    margin-left: 300%;
+}
+
+.scrolled .burgerMenu{
+    margin-top: -5px;
+}
+
 .scrolled .button{
     margin-top: 5%;
     padding: 15px;
@@ -121,6 +131,7 @@
 .burgerMenu {
     display: none;
     cursor: pointer;
+    margin-top: 13%;
   }
   
   /* Menü für kleine Bildschirme */
@@ -223,5 +234,15 @@
         margin-top: 20%;
         margin-left: 50%;
         margin-right: 50%;
+    }
+
+
+ 
+    .resLogo{
+        height: 80px;
+        width: 80px;
+        margin-left: 270%;
+        clip-path: circle();
+        margin-top: 70%;
     }
 }

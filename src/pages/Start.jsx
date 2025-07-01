@@ -2,7 +2,6 @@ import { Typewriter } from "react-simple-typewriter";
 import styled, { keyframes } from "styled-components";
 import { motion } from "framer-motion"; 
 import { useInView } from "react-intersection-observer";
-import Logo from "../assets/Logo.jpg";
 import { useNavigate } from "react-router-dom";
 
 
@@ -43,6 +42,8 @@ margin-left: 3%;
 
 @media (max-width: 767px) {
  max-width: 70%;
+ text-align: center;
+ margin-left: 15%;
 }
 `;
 
@@ -163,7 +164,6 @@ function Start() {
       </MyInfoText>
       </motion.div>
       
-      <Img src={Logo} alt="Logo" loading="lazy"/>
 
       <motion.div
          ref={btnRef}

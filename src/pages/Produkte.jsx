@@ -2,7 +2,7 @@ import styles from "../styles/Produkte.module.css";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Tilt from "react-parallax-tilt";
-import { useNavigate }  from "react-router-dom"
+import { useNavigate } from "react-router-dom";
 
 function Produkte() {
   const { ref: headingRef, inView: headingInView } = useInView({
@@ -17,6 +17,8 @@ function Produkte() {
     triggerOnce: true,
     threshold: 0.2,
   });
+
+  const isMobile = window.innerWidth < 767;
 
   const navigate = useNavigate();
 
@@ -46,33 +48,59 @@ function Produkte() {
       </motion.div>
 
       <div className={styles.ProdukteDiv}>
-        <Tilt scale={1.1}>
-          <div className={styles.ProdukteUnterDiv}>
-            <img alt="Produkt Bild" />
-            <p>Test</p>
-          </div>
-        </Tilt>
+        {!isMobile ? (
+          <>
+            <Tilt scale={1.1}>
+              <div className={styles.ProdukteUnterDiv}>
+                <img alt="Produkt Bild" />
+                <p>Test</p>
+              </div>
+            </Tilt>
 
-        <Tilt scale={1.1}>
-          <div className={styles.ProdukteUnterDiv}>
-            <img alt="Produkt Bild" />
-            <p>Test</p>
-          </div>
-        </Tilt>
+            <Tilt scale={1.1}>
+              <div className={styles.ProdukteUnterDiv}>
+                <img alt="Produkt Bild" />
+                <p>Test</p>
+              </div>
+            </Tilt>
 
-        <Tilt scale={1.1}>
-          <div className={styles.ProdukteUnterDiv}>
-            <img alt="Produkt Bild" />
-            <p>Test</p>
-          </div>
-        </Tilt>
+            <Tilt scale={1.1}>
+              <div className={styles.ProdukteUnterDiv}>
+                <img alt="Produkt Bild" />
+                <p>Test</p>
+              </div>
+            </Tilt>
 
-        <Tilt scale={1.1}>
-          <div className={styles.ProdukteUnterDiv}>
-            <img alt="Produkt Bild" />
-            <p>Test</p>
-          </div>
-        </Tilt>
+            <Tilt scale={1.1}>
+              <div className={styles.ProdukteUnterDiv}>
+                <img alt="Produkt Bild" />
+                <p>Test</p>
+              </div>
+            </Tilt>
+          </>
+        ) : (
+          <>
+            <div className={styles.ProdukteUnterDiv}>
+              <img alt="Produkt Bild" />
+              <p>Test</p>
+            </div>
+
+            <div className={styles.ProdukteUnterDiv}>
+              <img alt="Produkt Bild" />
+              <p>Test</p>
+            </div>
+
+            <div className={styles.ProdukteUnterDiv}>
+              <img alt="Produkt Bild" />
+              <p>Test</p>
+            </div>
+
+            <div className={styles.ProdukteUnterDiv}>
+              <img alt="Produkt Bild" />
+              <p>Test</p>
+            </div>
+          </>
+        )}
       </div>
 
       <motion.div
@@ -83,7 +111,12 @@ function Produkte() {
       >
         <p className={styles.ProdukteAppText}>
           You want to see more?
-          <button className={styles.download} onClick={() => navigate("/AppDownload")}>Download App</button>
+          <button
+            className={styles.download}
+            onClick={() => navigate("/AppDownload")}
+          >
+            Download App
+          </button>
         </p>
       </motion.div>
     </section>

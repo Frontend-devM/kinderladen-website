@@ -8,6 +8,7 @@
     width: 90%;
     margin-left: 5%;
     padding: 10px;
+    
 }
 
 .ProdukteH1{
@@ -33,3 +34,9 @@
     letter-spacing: 1.6px;
 }
 
+
+@media (max-width: 767px) {
+    .sectionProdukte{
+        margin-top: 30%;
+    }
+}

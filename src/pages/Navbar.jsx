@@ -8,6 +8,7 @@ import {
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
 import { useNavigate } from "react-router-dom";
+import Logo from "../assets/Logo.jpg"
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -49,7 +50,7 @@ function Navbar() {
           X
         </button>
         <ul>
-          <h1>المفكر الصغير</h1>
+          <h1 className={styles.Logo}>المفكر الصغير</h1>
           <li>
             <button
               onClick={() => handleLenisScroll("Home")}
@@ -95,7 +96,7 @@ function Navbar() {
       </nav>
 
       <div className={styles.left}>
-        <h1 className={styles.logo}>المفكر الصغير</h1>
+           <img src={Logo} alt="logo" className={styles.resLogo}/>        
       </div>
 
       <div className={styles.center}>

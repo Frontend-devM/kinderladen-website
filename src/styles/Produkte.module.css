@@ -70,3 +70,23 @@
 .download:hover {
     transform: scale(1.1);
 }
+
+
+
+
+@media (max-width: 767px) {
+    .ProdukteDiv{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .ProdukteAppText{
+        margin-top: 10%;
+    }
+
+    .download{
+        margin-left: 35%;
+        margin-top: 5%;
+
+    }
+}
