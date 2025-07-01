@@ -8,7 +8,7 @@ import {
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
 import { useNavigate } from "react-router-dom";
-import Logo from "../assets/Logo.jpg"
+import Logo from "../assets/Logo.jpg";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -23,7 +23,7 @@ function Navbar() {
     const el = document.getElementById(id);
     if (el && window.lenis) {
       window.lenis.scrollTo(el);
-      setMenuOpen(false); 
+      setMenuOpen(false);
     }
   };
 
@@ -35,6 +35,8 @@ function Navbar() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const isMobile = window.innerWidth < 767;
 
   return (
     <nav
@@ -95,9 +97,15 @@ function Navbar() {
         </ul>
       </nav>
 
-      <div className={styles.left}>
-           <img src={Logo} alt="logo" className={styles.resLogo}/>        
-      </div>
+      {!isMobile ? (
+        <div className={styles.left}>
+          <h1 className={styles.logo}>المفكر الصغير</h1>
+        </div>
+      ) : (
+        <div className={styles.left}>
+          <img src={Logo} alt="logo" className={styles.resLogo} loading="lazy"/>
+        </div>
+      )}
 
       <div className={styles.center}>
         <p className={styles.navItem} onClick={() => handleLenisScroll("Home")}>

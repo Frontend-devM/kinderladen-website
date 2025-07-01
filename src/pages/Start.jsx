@@ -20,7 +20,7 @@ margin-top: 13%;
 margin-left: 3%;
 
 @media (max-width: 767px) {
-  margin-top: 30%;
+  margin-top: 40%;
 }
 `;
 
