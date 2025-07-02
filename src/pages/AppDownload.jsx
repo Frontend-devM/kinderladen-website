@@ -50,28 +50,21 @@ function AppDownload() {
         </p>
       </div>
 
-      
       <img src={Handy} alt="Smartphone" className={styles.Handy} />
-        
+
       <img src={Handy3d} alt="Smartphone" className={styles.Handy1} />
-    
+
       <div className={styles.downloadDiv}>
-        <a
-          href=""
-          target="_blank"
-          rel="noopener noreferrer"
-          className={styles.Google}
-        >
-          <img src={Google} alt="Download on Google" />
+        <a href="" target="_blank" rel="noopener noreferrer">
+          <img
+            src={Google}
+            alt="Download on Google"
+            className={styles.Google}
+          />
         </a>
 
-        <a
-          href=""
-          target="_blank"
-          rel="noopener noreferrer"
-          className={styles.Apple}
-        >
-          <img src={Apple} alt="Download on Apple" />
+        <a href="" target="_blank" rel="noopener noreferrer">
+          <img src={Apple} alt="Download on Apple" className={styles.Apple} />
         </a>
       </div>
     </section>
