@@ -160,6 +160,9 @@ hr{
     margin-left: 25%;
     position: absolute;
     gap: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
   }
 
