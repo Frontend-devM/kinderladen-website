@@ -79,7 +79,7 @@ function Navbar() {
           </li>
           <li>
             <button
-              onClick={() => handleLenisScroll("download App")}
+              onClick={() => navigate("/AppDownload")}
               className={styles.burgerBtn}
             >
               Download App

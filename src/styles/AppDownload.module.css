@@ -110,3 +110,61 @@ hr{
 .back:hover{
   transform: translateX(11.6px);
 }
+
+
+
+
+
+@media (max-width: 767px){
+  body{
+    height: 180vh;
+  }
+
+  .BlurText{
+    text-align: center;
+    margin-left: 30%;
+    margin-top: 20%;
+  }
+
+  .back{
+    margin-top: -10%;
+    font-size: 1.5rem;
+  }
+
+  .SplitText{
+    margin-left: 15%;
+    font-size: 1.4rem;
+    letter-spacing: 1.6px;
+    line-height: 35px;
+    width: 70vw;
+    margin-top: 10%;
+  }
+
+
+  .Handy{
+     margin-top: 30%;
+     margin-left: 30%;
+     height: 450px;
+  }
+
+  .Handy1{
+    margin-top: 150%;
+    margin-right: 20%;
+    height: 500px;
+    
+  }
+
+  .downloadDiv{
+    margin-left: 10%;
+    position: absolute;
+    gap: 30px;
+  }
+
+  .Apple{
+    height: 60px;
+  }
+
+  .Google{
+    height: 60px;
+  }
+}

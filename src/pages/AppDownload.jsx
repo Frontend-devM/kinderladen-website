@@ -15,7 +15,7 @@ function AppDownload() {
     // Hintergrund setzen
     document.body.style.backgroundImage = `url(${background})`;
     document.body.style.backgroundSize = "cover";
-    document.body.style.backgroundRepeat = "no-repeat";
+    document.body.style.backgroundRepeat = "repeat";
     document.body.style.backgroundPosition = "center";
 
     return () => {
