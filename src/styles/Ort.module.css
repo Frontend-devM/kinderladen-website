@@ -38,6 +38,11 @@
 @media (max-width: 767px) {
     .sectionProdukte{
         margin-top: 30%;
-        margin-left: -2%;
+        margin-left: 5%;
+        width: 80vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 }

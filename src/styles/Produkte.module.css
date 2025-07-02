@@ -82,17 +82,21 @@
     }
 
     .ProdukteAppText{
-        margin-top: 10%;
+        margin-top: 15%;
     }
 
     .download{
-        margin-left: 35%;
-        margin-top: 5%;
-
+        margin-left: 15%;
+        margin-top: 10%;
+        font-size: 1.05rem;
     }
 
 
     .sectionProdukte{
-        margin-left: -2%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 80vw;
     }
 }
